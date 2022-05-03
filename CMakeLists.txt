@@ -162,6 +162,7 @@ if(NOT MSVC)
     set(CMAKE_REQUIRED_FLAGS "-Werror")
   endif()
   ei_add_cxx_compiler_flag("-pedantic")
+  ei_add_cxx_compiler_flag("-march=native")
   ei_add_cxx_compiler_flag("-Wall")
   ei_add_cxx_compiler_flag("-Wextra")
   #ei_add_cxx_compiler_flag("-Weverything")              # clang
